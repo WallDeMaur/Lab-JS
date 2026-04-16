@@ -1,31 +1,53 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Request counter</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="practise-lr3.js"></script>
+    <script src="data.js"></script>
+    <script src="logic.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body>
-<h1>Система учёта запросов</h1>
-
-<section>
-    <h2>Создание запроса</h2>
-    <p>Форма будет реализована в следующих лабораторных работах</p>
-</section>
-
-<section>
-    <h2>Список запросов</h2>
-    <p>Отображение данных будет добавлено позже</p>
-
-    <div>
-        <button id="btnAll">Показать все записи</button>
-        <button id="btnNew">Показать только NEW</button>
-        <button id="btnStatus">Показать статистику</button>
+    <div class="WALL">
+        <div class="WNDW">
+            <div class="BAR">
+                <div class="LNS">
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+                <div class="TXT">Request accounting</div>
+                <div class="LNS">
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+            <div class="CNTNT">
+                <div class="BTN">
+                    <button id="btnAll">Показать все</button>
+                    <button id="btnNew">Показать NEW</button>
+                    <button id="btnSort">Сортировать по value ↓</button>
+                    <button id="btnStats">Показать статистику</button>
+                </div>
+                <div class="MSG">
+                    <div class="MSGTTL"><p>Message:</p></div>
+                    <div class="message" id="message"></div>
+                </div>
+                <div id="list" class="list"></div>
+                <!-- <div id="message"></div> -->
+                <!-- <div id="demoList"></div> -->
+            </div>
+        </div>
     </div>
-
-    <pre id="output"></pre>
-</section>
 </body>
 </html>

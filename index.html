@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="practise-lr3.js"></script>
+    <script src="practice-lr4.js"></script>
     <script src="data.js"></script>
     <script src="logic.js"></script>
     <script src="script.js" defer></script>
@@ -38,10 +39,30 @@
                     <button id="btnNew">Показать NEW</button>
                     <button id="btnSort">Сортировать по value ↓</button>
                     <button id="btnStats">Показать статистику</button>
+                    <button id="btnData">Загрузить данные</button>
                 </div>
                 <div class="MSG">
                     <div class="MSGTTL"><p>Message:</p></div>
                     <div class="message" id="message"></div>
+                </div>
+                <div class="MSG">
+                    <div class="MSGTTL"><p>Errors:</p></div>
+                    <div class="message" id="formErrors"></div>
+                </div>
+                <div class="FRM">
+                    <form action="">
+                        <fieldset>
+                            <legend style="font-family: Arial, Helvetica, sans-serif;">Request</legend>
+                                <input id="titleInput" name="title" placeholder="Название" />
+                                <input id="valueInput" name="value" placeholder="Value" />
+                                <input id="createdAtInput" name="createdAt" placeholder="YYYY-MM-DD" />
+                                <select id="statusInput" name="status">
+                                    <option value="new">new</option>
+                                    <option value="done">done</option>
+                                </select>
+                                <button type="submit" style="width: 100%;">Сохранить</button>
+                        </fieldset>
+                    </form>
                 </div>
                 <div id="list" class="list"></div>
                 <!-- <div id="message"></div> -->
